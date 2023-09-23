@@ -1,6 +1,11 @@
 .header {
+  nav {
+    padding: 24px;
+  }
   &__logo {
     img {
+      width: 8.8125rem;
+      height: 1.375rem;
     }
   }
   &__menu {
@@ -13,5 +18,25 @@
         margin-bottom: 3px;
       }
     }
+  }
+
+  &__links {
+    a {
+      color: $grayishBlue;
+      font-size: $font-sm;
+      transition: color 200ms ease-in-out;
+
+      &:not(:last-child) {
+        margin-right: 32px;
+      }
+
+      &:hover {
+        color: $darkBlue;
+      }
+    }
+  }
+  &__cta {
+    color: $white;
+    font-size: $font-sm;
   }
 }
