@@ -20,26 +20,17 @@
     <link rel="stylesheet" href="/app/scss/styles.css" />
     <title>Frontend Mentor | Easybank landing page</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
 
     <header class="header">
-      <nav class="flex flex-jc-sb flex-ai-c">
+      <div class="overlay"></div>
+      <nav class="flex flex-jc-sb flex-ai-c" style="position: relative;z-index: 1;">
       
       <a href="/" class="header__logo">
         <img src="images/logo.svg" alt="Easybank">
       </a>
-      <a href="#" class="header__menu hide-for-desktop">
+      <a id="btnHamburger" href="#" class="header__menu hide-for-desktop"  >
         <span></span>
         <span></span>
         <span></span>
