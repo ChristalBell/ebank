@@ -58,6 +58,9 @@ body {
   margin: 0;
   padding: 0;
 }
+body.noscroll {
+  overflow: hidden;
+}
 
 a,
 a:visited,
@@ -118,7 +121,7 @@ button,
 .header .overlay {
   opacity: 0;
   position: fixed;
-  top: 3.75rem;
+  top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
@@ -127,6 +130,8 @@ button,
 .header nav {
   padding: 1.0625rem;
   padding-bottom: 1.0625rem;
+  position: relative;
+  background-color: hsl(0, 0%, 100%);
 }
 .header__logo img {
   width: 8.8125rem;
@@ -193,4 +198,29 @@ button,
 }
 .header__cta:hover {
   opacity: 0.75;
+}
+
+.hero__image {
+  position: relative;
+  background-image: url("/images/bg-intro-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 17.5rem;
+}
+.hero__image::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url(/images/image-mockups.png);
+  background-size: 93%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+.hero__text h1 {
+  font-weight: 300;
+  font-size: 1.875rem;
+  color: hsl(223, 26%, 24%);
+  line-height: 1;
 }/*# sourceMappingURL=styles.css.map */
