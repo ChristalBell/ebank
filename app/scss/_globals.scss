@@ -23,6 +23,12 @@ body {
   }
 }
 
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
 a,
 a:visited,
 a:hover {
@@ -30,8 +36,10 @@ a:hover {
 }
 
 .container {
-  padding-left: 1.5rem;
+  padding-top: 2.25rem;
   padding-right: 1.5rem;
+  padding-bottom: 2.25rem;
+  padding-left: 1.5rem;
 }
 
 .flex {
@@ -50,13 +58,22 @@ a:hover {
 
 button,
 .button {
+  display: inline-block;
+  padding: 0.875rem 2.1875rem;
   background: linear-gradient(to right, $limeGreen, $brightCyan);
   border: 0;
   border-radius: 50px;
-  color: $white;
   cursor: pointer;
+  color: $white;
   font-weight: 400;
-  padding: 0.875rem 2.1875rem;
+  font-size: $font-sm;
+  position: relative;
+  transition: opacity 300ms ease-in-out;
+  overflow: hidden;
+
+  &:hover {
+    opacity: 0.75;
+  }
 }
 
 .hide-for-mobile {
