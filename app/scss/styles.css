@@ -17,7 +17,7 @@
   }
 }
 .fade-in {
-  animation: fade-in 200ms ease-in-out forwards;
+  animation: fade-in 400ms ease-in-out forwards;
 }
 
 @keyframes fade-out {
@@ -35,7 +35,7 @@
   }
 }
 .fade-out {
-  animation: fade-out 200ms ease-in-out forwards;
+  animation: fade-out 400ms ease-in-out forwards;
 }
 
 html {
@@ -256,6 +256,7 @@ button:hover,
   margin-top: 1.5rem;
   padding: 1.625rem;
   border-radius: 5px;
+  z-index: 2;
 }
 .header__menu a {
   display: block;
@@ -610,4 +611,4 @@ button:hover,
 .footer .attribution {
   margin-top: 4rem;
   font-size: 0.875rem;
-}/*# sourceMappingURL=styles.css.map */
+} /*# sourceMappingURL=styles.css.map */
